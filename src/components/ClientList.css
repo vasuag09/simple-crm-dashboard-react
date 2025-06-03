@@ -1,0 +1,243 @@
+/* ClientList.css (updated to include FormData styles) */
+
+/* Existing ClientList styles (for reference, included from previous response) */
+.crm-dashboard {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.crm-dashboard h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-client-btn {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.add-client-btn:hover {
+  background-color: #218838;
+}
+
+.add-client-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3);
+}
+
+.client-list {
+  list-style: none;
+  padding: 0;
+}
+
+.client-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.client-list li button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.client-list li button:first-of-type {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.client-list li button:first-of-type:hover {
+  background-color: #e0a800;
+}
+
+.client-list li button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+.client-list li button:last-of-type:hover {
+  background-color: #c82333;
+}
+
+.no-clients {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+/* FormData styles */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+  margin: 0 0 15px;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.form-container div {
+  margin-bottom: 15px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.form-container button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.form-container button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3);
+}
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container button[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.form-container button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+.form-container button[type="button"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(108, 117, 125, 0.3);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+.modal-content button {
+  padding: 10px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modal-content button:hover {
+  background-color: #5a6268;
+}
+/* Responsive design */
+@media (max-width: 600px) {
+  .crm-dashboard {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .client-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .client-list li button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-container input,
+  .form-container select {
+    font-size: 12px;
+  }
+
+  .form-container button[type="submit"] {
+    font-size: 12px;
+  }
+}
