@@ -1,12 +1,46 @@
-# React + Vite
+# 📇 SimpleCRM Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight CRM (Customer Relationship Management) web app built with **React**. Manage your clients efficiently with clean UI, modals for editing, and simple filters.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔍 **View Clients** – List of all saved clients with key details.
+- ➕ **Add Client** – Add new clients using a modal form.
+- ✏️ **Edit Client** – Modify client details with pre-filled modal.
+- 🧾 **Controlled Forms** – Name, email, status, and last-contacted date.
+- 📂 **Filter by Status** – View `All`, `Active`, or `Inactive` clients.
+- 📅 **Sort by Last Contacted** – Toggle between ascending/descending.
+- 💾 **LocalStorage Support** – Client data persists on page reload.
+- 🎯 **Auto Focus** – Input focus using React `ref`.
+- 🎨 **Styled UI** – Clean layout with basic CSS.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧑‍💻 Tech Stack
+
+- **React** (via Vite)
+- **JavaScript (ES6+)**
+- **CSS**
+- **React Portals** – For modals
+- **Refs** – For input focus
+- **localStorage** – For data persistence
+
+---
+
+## 📸 Screenshots
+
+![App Screenshot](./assets/screenshot.png)
+
+*(Optional: Add screenshots after development)*
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/simple-crm-dashboard.git
+cd simple-crm-dashboard
